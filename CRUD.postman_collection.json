@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "292cff08-0a88-487e-bd86-f9251d4b7dc2",
+		"name": "CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "Paco",
+							"type": "default"
+						},
+						{
+							"key": "apellido",
+							"value": "Ruiz",
+							"type": "default"
+						},
+						{
+							"key": "telefono",
+							"value": "11111111",
+							"type": "default"
+						},
+						{
+							"key": "direccion",
+							"value": "Avda",
+							"type": "default"
+						},
+						{
+							"key": "fecha_nacimiento",
+							"value": "2021-1-10",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/guardar-usuario.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"guardar-usuario.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "Felipe",
+							"type": "default"
+						},
+						{
+							"key": "apellidos",
+							"value": "Reemplazado",
+							"type": "default"
+						},
+						{
+							"key": "telefono",
+							"value": "11111",
+							"type": "default"
+						},
+						{
+							"key": "direccion",
+							"value": "Avenida reemplzo",
+							"type": "default"
+						},
+						{
+							"key": "fecha_nacimiento",
+							"value": "2011-11-11",
+							"type": "default"
+						},
+						{
+							"key": "id_usuario",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/actualizar-usuario.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"actualizar-usuario.php"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Felipe",
+							"disabled": true
+						},
+						{
+							"key": "apellido",
+							"value": "Suárez",
+							"disabled": true
+						},
+						{
+							"key": "telefono",
+							"value": "222222",
+							"disabled": true
+						},
+						{
+							"key": "direccion",
+							"value": "Avenida",
+							"disabled": true
+						},
+						{
+							"key": "fecha_nacimiento",
+							"value": "2022-1-11",
+							"disabled": true
+						},
+						{
+							"key": "id_usuario",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "Felipe",
+							"type": "default"
+						},
+						{
+							"key": "apellidos",
+							"value": "Reemplazado",
+							"type": "default"
+						},
+						{
+							"key": "telefono",
+							"value": "11111",
+							"type": "default"
+						},
+						{
+							"key": "direccion",
+							"value": "Avenida reemplzo",
+							"type": "default"
+						},
+						{
+							"key": "fecha_nacimiento",
+							"value": "2011-11-11",
+							"type": "default"
+						},
+						{
+							"key": "id_usuario",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/actualizar-usuario.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"actualizar-usuario.php"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Felipe",
+							"disabled": true
+						},
+						{
+							"key": "apellido",
+							"value": "Suárez",
+							"disabled": true
+						},
+						{
+							"key": "telefono",
+							"value": "222222",
+							"disabled": true
+						},
+						{
+							"key": "direccion",
+							"value": "Avenida",
+							"disabled": true
+						},
+						{
+							"key": "fecha_nacimiento",
+							"value": "2022-1-11",
+							"disabled": true
+						},
+						{
+							"key": "id_usuario",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
